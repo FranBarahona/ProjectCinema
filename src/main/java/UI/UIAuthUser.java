@@ -14,6 +14,7 @@ public static void authUserC() throws Exception {
     CrudAdmin admin = new CrudAdmin();
     CrudUser user = new CrudUser();
 
+    int i = 3;
     do {
         System.out.println("Insert your nickname");
         String nickname = sc.nextLine();
@@ -27,7 +28,10 @@ public static void authUserC() throws Exception {
 
         userCorrect = loginSys.userLogin();
 
-    }while(!userCorrect);
+        i = i - 1;
+
+        System.out.println("You have " + i + " attempts left");
+    }while(i > 0 && !userCorrect);
     }
 }
 
