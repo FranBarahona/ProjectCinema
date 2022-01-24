@@ -24,7 +24,7 @@ public class UITicketMenu {
         int response;
         Scanner sc = new Scanner(System.in);
         StringBuilder Seat = new StringBuilder();
-        System.out.println("Choose number movie");
+        System.out.println("Select the number of the movie of your choice");
         response = Integer.parseInt(sc.nextLine());
         CrudMovie movie = new CrudMovie();
 
@@ -43,7 +43,7 @@ public class UITicketMenu {
                     System.out.println(roomKey.toUpperCase());
                     movieKey = movieKey.toLowerCase();
                     roomList.get(roomKey).print();
-                    System.out.println("How many seats you want?");
+                    System.out.println("How many tickets you want?");
                     int seatsNumber = Integer.parseInt(sc.nextLine());
 
                     MailSender.setMovieTitle(movieKey);
@@ -52,11 +52,11 @@ public class UITicketMenu {
                     MailSender.setPrice(movieList.get(movieKey).getPrice()*seatsNumber);
 
                     for(int i =0; i< seatsNumber; i++) {
-                        System.out.println("You are selecting your seat number: "+ (i+1));
-                        System.out.println("Insert Row: ");
+                        System.out.println("You are selecting seat number: "+ (i+1));
+                        System.out.println("Insert row number: ");
                         String y = sc.nextLine();
                         y = y.toUpperCase();
-                        System.out.println("Insert Column: ");
+                        System.out.println("Insert column number: ");
                         int x = Integer.parseInt(sc.nextLine());
                         Seat.append(" "+y+x+" ");
                         roomList.get(roomKey).activateSit(y, x);
@@ -80,7 +80,7 @@ public class UITicketMenu {
 
             case 2-> UIBuyTicket();
 
-            case 3-> System.out.println("Exiting from buy ticket system!!");
+            case 3-> System.out.println("Exiting ticket system!!");
 
         }
     }

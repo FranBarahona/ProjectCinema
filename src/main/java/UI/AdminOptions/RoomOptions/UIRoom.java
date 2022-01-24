@@ -6,13 +6,13 @@ import static UI.AdminOptions.RoomOptions.UIReRoom.IreRoom;
 
 public class UIRoom {
 
-    public static void roomMenu(){
+    public static void roomMenu() throws Exception {
         int response;
         Scanner sc = new Scanner(System.in);
         do{
-            System.out.println("1.Register Room");
-            System.out.println("2.Show Room");
-            System.out.println("3.Back");
+            System.out.println("1. Register Room");
+            System.out.println("2. Show Room");
+            System.out.println("3. Back");
             response = Integer.parseInt(sc.nextLine());
 
             switch (response) {

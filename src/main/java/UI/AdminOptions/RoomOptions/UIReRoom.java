@@ -5,17 +5,17 @@ import static Controller.Room.reRoom.reRooms;
 
 
 public class UIReRoom {
-    public static void IreRoom() {
+    public static void IreRoom() throws Exception {
             int response;
             Scanner sc = new Scanner(System.in);
             do{
                 System.out.println("Room name");
                 String name = sc.nextLine();
-                System.out.println("date room dd-mm-yy");
+                System.out.println("Date (DD-MM-YY)");
                 String date = sc.nextLine();
 
-                System.out.println("1.confirm");
-                System.out.println("2.exit");
+                System.out.println("1. Confirm");
+                System.out.println("2. Exit");
                 response = Integer.parseInt(sc.nextLine());
 
                 switch (response) {
@@ -24,7 +24,7 @@ public class UIReRoom {
                         response = 0;
                     }
                     case 2-> response = 0;
-                    default -> System.out.println("invalid option");
+                    default -> System.out.println("Invalid option");
                 }
             }while(response != 0);
     }
