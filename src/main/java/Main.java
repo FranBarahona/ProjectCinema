@@ -1,4 +1,5 @@
 import UI.AdminOptions.UIAdminMenu;
+import Utils.Logs.Logs;
 
 import static UI.AdminOptions.UIAdminMenu.adminMenu;
 import static UI.UIMenu.showMenu;

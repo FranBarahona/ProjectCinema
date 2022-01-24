@@ -1,4 +1,6 @@
 package UI;
+import Utils.Logs.Logs;
+
 import java.util.Scanner;
 import static Controller.User.reUser.reUsers;
 import static UI.UIMenu.showMenu;
@@ -27,7 +29,7 @@ public class UIResgisterUser {
                 }
                 case 2 -> registerUser();
                 case 3 -> response = 0;
-                default -> System.out.println("Option invalid");
+                default -> Logs.toLog("Invalid Option at UIRegisterUser");
             }
         }while(response != 0);
     }

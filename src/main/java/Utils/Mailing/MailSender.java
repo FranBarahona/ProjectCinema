@@ -5,6 +5,7 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
+import javax.mail.PasswordAuthentication;
 import java.util.Properties;
 
 public class MailSender {
@@ -23,7 +24,7 @@ public class MailSender {
         String password = "admin123!";
 
         Session session = javax.mail.Session.getInstance(properties, new javax.mail.Authenticator() {
-            protected PasswordAuthentication getPasswordAuthentication() {
+            protected javax.mail.PasswordAuthentication getPasswordAuthentication() {
                 return new PasswordAuthentication(myAccountEmail, password);
             }
         });
