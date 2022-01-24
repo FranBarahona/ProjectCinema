@@ -10,8 +10,8 @@ import static Model.AdminModel.Admins.adminList;
 
 public class CrudAdmin implements ICrud {
 
-    FileManage file;
-    Admin admin;
+    private FileManage file;
+    private Admin admin;
 
     public CrudAdmin(){
         this.file = new FileManage("Admin");
@@ -22,7 +22,7 @@ public class CrudAdmin implements ICrud {
         this.admin.setId((adminList.isEmpty())?1:adminList.size() + 1);
     }
 
-    public Admin getAdmin(){
+    private Admin getAdmin(){
         return this.admin;
     }
 

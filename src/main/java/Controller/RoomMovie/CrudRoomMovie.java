@@ -8,8 +8,8 @@ import static Model.RoomMovieModel.RoomMovies.roomMovieList;
 
 public class CrudRoomMovie implements ICrud {
 
-    RoomMovie roomMovie;
-    FileManage file;
+    private RoomMovie roomMovie;
+    private FileManage file;
 
     public CrudRoomMovie(){
         file = new FileManage("RoomMovie");

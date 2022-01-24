@@ -7,8 +7,8 @@ import static Model.MovieModel.Movies.movieList;
 
 public class CrudMovie implements ICrud {
 
-    Movie movie;
-    FileManage file;
+    private Movie movie;
+    private FileManage file;
 
     public CrudMovie(){
         file = new FileManage("Movies");
@@ -16,8 +16,8 @@ public class CrudMovie implements ICrud {
     public Movie getMovie() {
         return movie;
     }
-    public void setMovie(String title,String premiere,int price){this.movie = new Movie((movieList.isEmpty())?1:movieList.size()+1,title,premiere, price);
-    }
+    public void setMovie(String title,String premiere,int price)
+    {this.movie = new Movie((movieList.isEmpty())?1:movieList.size()+1,title,premiere, price);}
 
     @Override
     public void read() {

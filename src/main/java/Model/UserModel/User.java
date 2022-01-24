@@ -13,6 +13,11 @@ public class User extends UserDetails {
     {
     super(id, name, lastName, nickname, password);
     }
+    public User()
+    {
+        super(0,"","","","");
+    }
+
     @Override
     public String toString() {
         return super.toString();

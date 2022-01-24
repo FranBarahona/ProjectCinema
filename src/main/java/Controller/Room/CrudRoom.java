@@ -7,16 +7,20 @@ import java.util.Map;
 import static Model.RoomModel.Rooms.roomList;
 
 public class CrudRoom implements ICrud {
-    Room room;
-    FileManage file;
+    private Room room;
+    private FileManage file;
+
     public CrudRoom(){file = new FileManage("Room");}
+
     public Room getRoom() {
         return room;
     }
+
     public void setRoom(String name,String date){
         int sits[][] = new int[5][5];
         this.room = new Room((roomList.isEmpty())?1:roomList.size()+1,name,date,sits);
     }
+
     @Override
     public void read() {
         try {
