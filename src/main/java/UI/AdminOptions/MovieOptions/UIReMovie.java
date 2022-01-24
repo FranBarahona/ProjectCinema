@@ -7,16 +7,16 @@ public class UIReMovie {
         int response;
         Scanner sc = new Scanner(System.in);
         do{
-            System.out.println("Title movie");
+            System.out.println("Movie title");
             String title = sc.nextLine();
             System.out.println("Ticket price");
             String price = sc.nextLine();
             System.out.println("Premiere date (DD-MM-YY)");
             String premiere = sc.nextLine();
 
-            System.out.println("1.Confirm");
-            System.out.println("2.To rewrite");
-            System.out.println("3.back");
+            System.out.println("1. Confirm");
+            System.out.println("2. To rewrite");
+            System.out.println("3. Back");
             response = Integer.parseInt(sc.nextLine());
 
             switch (response){

@@ -11,7 +11,7 @@ import static UI.AdminOptions.RoomOptions.UIRoom.roomMenu;
 
 public class UIAdminMenu {
 
-    public static void adminMenu() {
+    public static void adminMenu() throws Exception {
         int response = 0;
         do {
             System.out.println();
@@ -32,7 +32,7 @@ public class UIAdminMenu {
                 case 5 -> roomMenu();
                 case 6 -> reRoomMovie();
                 case 0 -> response = 0;
-                default -> System.out.println("The Number is not valid");
+                default -> System.out.println("The number is not valid");
             }
         }
             while (response != 0) ;

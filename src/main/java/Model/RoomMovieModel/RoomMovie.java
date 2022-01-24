@@ -15,7 +15,8 @@ public class RoomMovie implements Serializable {
     public String toString() {
         return "Movies{" +
                 " Movie='" + getTitle() + '\'' +
-                ", NameSala='" + getRoom() + '\'' +
+                ", Room name='" + getRoom() + '\'' +
                 '}';
+
     }
 }

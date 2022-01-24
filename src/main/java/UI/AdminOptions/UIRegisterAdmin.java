@@ -19,9 +19,9 @@ public class UIRegisterAdmin {
             admin.setNickname(sc.nextLine());
             System.out.println("Write your password");
             admin.setPassword(sc.nextLine());
-            System.out.println("1.Confirm");
-            System.out.println("2.back");
-            System.out.println("3.exit");
+            System.out.println("1. Confirm");
+            System.out.println("2. Back");
+            System.out.println("3. Exit");
             response = Integer.parseInt(sc.nextLine());
             switch (response){
                 case 1 ->{
@@ -30,7 +30,7 @@ public class UIRegisterAdmin {
                 }
                 case 2 -> response = 1;
                 case 3 -> response = 0;
-                default -> System.out.println("option invalid");
+                default -> System.out.println("Option invalid");
 
             }
         }while(response != 0);

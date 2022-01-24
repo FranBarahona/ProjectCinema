@@ -15,11 +15,11 @@ public class UIRegisterRoomMovie {
            showRooms();
             System.out.println("Title movie");
             String title = sc.nextLine();
-            System.out.println("Name room");
+            System.out.println("Room name");
             String room = sc.nextLine();
 
-            System.out.println("1.Confirm");
-            System.out.println("2.back");
+            System.out.println("1. Confirm");
+            System.out.println("2. Back");
             response = Integer.parseInt(sc.nextLine());
 
             switch (response) {
