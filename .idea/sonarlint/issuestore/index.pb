@@ -29,8 +29,6 @@ e
 +src/main/java/Controller/Room/showRoom.java,7\a\7a429dfed4a53a239b2e062d22655e9347b7e3b0
 G
 src/main/java/Main.java,e\4\e44a8606ce010ad9b89aafdfcee2ab49afbf6d10
-P
- src/main/java/UI/UIAuthUser.java,6\5\6500175965e3b4a247246f1cb6c6bbe559bdf60e
 [
 +src/main/java/Controller/Room/CrudRoom.java,c\6\c6b30f0e1ee7ae40a07d8bb40931e6384f69d855
 ]
