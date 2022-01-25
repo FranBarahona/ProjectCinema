@@ -1,0 +1,15 @@
+
+O
+java:S1854"9Remove this useless assignment to local variable "total".(ë©Ó
+G
+java:S1172",Remove this unused method parameter "price".(üŸ«Ìúÿÿÿÿ
+@
+java:S1481"*Remove this unused "total" local variable.(ë©Ó
+>	java:S108")Either remove or fill this block of code.(”ı¾
+S	java:S106("9Replace this use of System.out or System.err by a logger.(íåÓƒÿÿÿÿÿ
+S	java:S106,"9Replace this use of System.out or System.err by a logger.(©şêÜúÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(³ßôıÿÿÿÿ
+g
+java:S2095%"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(õéµ¨ûÿÿÿÿ
+g
+java:S2095"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(Ê¹‰©øÿÿÿÿ

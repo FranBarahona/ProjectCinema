@@ -1,0 +1,14 @@
+
+[	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(ÿŠ¢ƒ
+m
+java:S3008"RRename this field "Session" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£ø‰¿ûÿÿÿÿ
+U
+java:S1118
+":Add a private constructor to hide the implicit public one.(«•¯Úúÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‰ÿ÷žýÿÿÿÿ
+W
+java:S1161":Add the "@Override" annotation above this method signature(‡èú×8¿ÇÑáâ/
+N	java:S1062"9Replace this use of System.out or System.err by a logger.(“Žòê
+M
+java:S1068"+Remove this unused "Session" private field.(£ø‰¿ûÿÿÿÿ8ÅÇÑáâ/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÔÖØ«ÿÿÿÿÿ

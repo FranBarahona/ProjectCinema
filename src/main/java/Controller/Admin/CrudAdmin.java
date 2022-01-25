@@ -38,7 +38,7 @@ public class CrudAdmin implements ICrud {
         }
     }
     @Override
-    public void write() {
+    public void write(){
         try {
             adminList.put(admin.getNickname(), getAdmin());
             file.OutputStreamProcess(adminList);

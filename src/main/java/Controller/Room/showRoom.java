@@ -18,7 +18,6 @@ public class showRoom {
                 System.out.println(e.getMessage());
             }
         Scanner sc = new Scanner(System.in);
-
         }
     }
 
