@@ -1,4 +1,6 @@
 package UI;
+import Utils.Logs.Logs;
+
 import java.util.Scanner;
 import static UI.UIAuthUser.authUserC;
 import static UI.UIResgisterUser.registerUser;
@@ -19,7 +21,7 @@ public static void showMenu() throws Exception {
             case 1 -> authUserC();
             case 2 -> registerUser();
             case 0 -> response=0;
-            default -> System.out.println("Invalid Option");
+            default -> Logs.toLog("Invalid Option at UIMenu");
         }
     }
 

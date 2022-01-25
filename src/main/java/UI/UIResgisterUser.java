@@ -1,6 +1,5 @@
 package UI;
-import Model.UserDetails;
-import Model.UserModel.User;
+import Utils.Logs.Logs;
 
 import java.util.Scanner;
 import static Controller.User.reUser.reUsers;
@@ -8,31 +7,29 @@ import static UI.UIMenu.showMenu;
 
 public class UIResgisterUser {
     public static void registerUser(){
-        UserDetails user = new User();
         int response = 0;
         do{
             Scanner sc = new Scanner(System.in);
             System.out.println("Write your name");
-            user.setName(sc.nextLine());
+            String name = sc.nextLine();
             System.out.println("Write your lastName");
-            user.setLastName(sc.nextLine());
+            String lastName = sc.nextLine();
             System.out.println("Write your nickname");
-            user.setNickname(sc.nextLine());
+            String nickname = sc.nextLine();
             System.out.println("Write your password");
-            user.setPassword(sc.nextLine());
-
+            String password = sc.nextLine();
             System.out.println("1.Confirm");
             System.out.println("2.back");
             System.out.println("3.exit");
             response = Integer.parseInt(sc.nextLine());
             switch (response){
                 case 1 ->{
-                    reUsers(user);
+                    reUsers(name,lastName,nickname,password);
                     response = 0;
                 }
                 case 2 -> registerUser();
                 case 3 -> response = 0;
-                default -> System.out.println("Option invalid");
+                default -> Logs.toLog("Invalid Option at UIRegisterUser");
             }
         }while(response != 0);
     }

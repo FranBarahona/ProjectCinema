@@ -5,6 +5,7 @@ import Model.UserDetails;
 import Model.UserModel.User;
 import Utils.Files.FileManage;
 import Utils.Interfaces.ICrud;
+import Utils.Logs.Logs;
 
 import java.io.*;
 import java.util.Map;
@@ -38,6 +39,7 @@ public class CrudUser implements ICrud {
         } catch (Exception e) {
             if(e.getMessage() != null)
                 System.err.println(e.getMessage());
+                Logs.toLog(e.getMessage());
         }
     }
 
@@ -49,6 +51,7 @@ public class CrudUser implements ICrud {
         } catch (Exception e) {
             if(e.getMessage() != null)
                 System.err.println(e.getMessage());
+                Logs.toLog(e.getMessage());
         }
     }
 

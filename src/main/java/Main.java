@@ -1,4 +1,5 @@
 import UI.AdminOptions.UIAdminMenu;
+import Utils.Logs.Logs;
 
 import static UI.AdminOptions.UIAdminMenu.adminMenu;
 import static UI.UIMenu.showMenu;
@@ -10,6 +11,7 @@ public class Main {
 
         }catch (Exception e){
             System.out.println(e.getMessage());
+            Logs.toLog(e.getMessage());
         }
 
     }

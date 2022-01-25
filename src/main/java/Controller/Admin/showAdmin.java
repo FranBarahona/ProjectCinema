@@ -1,5 +1,7 @@
 package Controller.Admin;
 import Model.AdminModel.Admin;
+import Utils.Logs.Logs;
+
 import java.util.Map;
 import java.util.Scanner;
 import static Model.AdminModel.Admins.adminList;
@@ -17,6 +19,7 @@ public class showAdmin{
             }
         } catch(Exception e){
             System.out.println(e.getMessage());
+            Logs.toLog(e.getMessage());
         }
             Scanner sc = new Scanner(System.in);
             sc.nextLine();

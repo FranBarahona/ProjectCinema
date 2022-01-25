@@ -4,6 +4,8 @@ import Model.AdminModel.Admin;
 import Model.UserDetails;
 import Utils.Files.FileManage;
 import Utils.Interfaces.ICrud;
+import Utils.Logs.Logs;
+
 import java.util.Map;
 
 import static Model.AdminModel.Admins.adminList;
@@ -35,6 +37,7 @@ public class CrudAdmin implements ICrud {
         } catch (Exception e) {
             if(e.getMessage() != null)
                 System.err.println(e.getMessage());
+                Logs.toLog(e.getMessage());
         }
     }
     @Override
@@ -45,6 +48,7 @@ public class CrudAdmin implements ICrud {
         } catch (Exception e) {
             if(e.getMessage() != null)
                 System.err.println(e.getMessage());
+                Logs.toLog(e.getMessage());
         }
     }
 

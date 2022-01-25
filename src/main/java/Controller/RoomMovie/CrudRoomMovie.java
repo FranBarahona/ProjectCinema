@@ -3,6 +3,8 @@ package Controller.RoomMovie;
 import Model.RoomMovieModel.RoomMovie;
 import Utils.Files.FileManage;
 import Utils.Interfaces.ICrud;
+import Utils.Logs.Logs;
+
 import java.util.Map;
 import static Model.RoomMovieModel.RoomMovies.roomMovieList;
 
@@ -29,6 +31,7 @@ public class CrudRoomMovie implements ICrud {
         } catch (Exception e) {
             if(e.getMessage() != null)
                 System.err.println(e.getMessage());
+                Logs.toLog(e.getMessage());
         }
     }
     @Override
@@ -40,6 +43,7 @@ public class CrudRoomMovie implements ICrud {
         } catch (Exception e) {
             if(e.getMessage() != null)
                 System.err.println(e.getMessage());
+                Logs.toLog(e.getMessage());
         }
     }
 

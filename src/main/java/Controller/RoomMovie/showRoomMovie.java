@@ -1,5 +1,7 @@
 package Controller.RoomMovie;
 import Model.RoomMovieModel.RoomMovie;
+import Utils.Logs.Logs;
+
 import java.util.Map;
 import static Model.RoomMovieModel.RoomMovies.roomMovieList;
 
@@ -17,6 +19,7 @@ public class showRoomMovie {
             }
         } catch(Exception e){
             System.out.println(e.getMessage());
+            Logs.toLog(e.getMessage());
         }
 
     }

@@ -1,6 +1,6 @@
 package Controller.User;
 
-import Model.UserDetails;
+import Utils.Logs.Logs;
 
 import java.util.Scanner;
 
@@ -10,24 +10,25 @@ import static UI.UIResgisterUser.registerUser;
 
 public class reUser{
 
-    public static void reUsers(UserDetails user){
+    public static void reUsers(String name,String lastName,String nickname,String password){
         Scanner sc = new Scanner(System.in);
         try{
                 //Recupera usuarios actuales y add nuevos
-            CrudUser cUser = new CrudUser();
-            cUser.read();
+            CrudUser user = new CrudUser();
+            user.read();
                 //Registra nuevos usuarios
-                if(userList.containsKey(user.getNickname())){
+                if(userList.containsKey(nickname)){
                     System.out.println("this name is not available");
                     System.out.println("please write an available nickname");
                     sc.nextLine();
                     registerUser();
                 }else{
-                    cUser.setUser(user);
-                    cUser.write();
+                    user.setUser(name,lastName,nickname,password);
+                    user.write();
                 }
     } catch(Exception e){
         System.err.println(e.getMessage());
+        Logs.toLog(e.getMessage());
      }
     }
 }

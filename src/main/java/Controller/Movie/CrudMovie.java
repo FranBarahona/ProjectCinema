@@ -2,6 +2,8 @@ package Controller.Movie;
 import Model.MovieModel.Movie;
 import Utils.Files.FileManage;
 import Utils.Interfaces.ICrud;
+import Utils.Logs.Logs;
+
 import java.util.Map;
 import static Model.MovieModel.Movies.movieList;
 
@@ -28,6 +30,7 @@ public class CrudMovie implements ICrud {
         } catch (Exception e) {
             if(e.getMessage() != null)
                 System.err.println(e.getMessage());
+                Logs.toLog(e.getMessage());
         }
     }
 
@@ -40,6 +43,7 @@ public class CrudMovie implements ICrud {
         } catch (Exception e) {
             if(e.getMessage() != null)
                 System.err.println(e.getMessage());
+                Logs.toLog(e.getMessage());
         }
     }
 }

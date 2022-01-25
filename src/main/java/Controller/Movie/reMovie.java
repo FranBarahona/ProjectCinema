@@ -1,4 +1,6 @@
 package Controller.Movie;
+import Utils.Logs.Logs;
+
 import java.util.Scanner;
 import static Controller.Movie.CrudMovie.*;
 import static Model.MovieModel.Movies.movieList;
@@ -24,6 +26,7 @@ public class reMovie {
                 }
         } catch(Exception e){
             System.err.println(e.getMessage());
+            Logs.toLog(e.getMessage());
         }
     }
 }
