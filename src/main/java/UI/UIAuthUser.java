@@ -28,9 +28,14 @@ public static void authUserC() throws Exception {
 
         userCorrect = loginSys.userLogin();
 
-        i = i - 1;
-
-        System.out.println("You have " + i + " attempts left");
+        if (!userCorrect) {
+            i = i - 1;
+            if (i == 0){
+                System.out.println("Login attempt failed, please try again later");
+            } else {
+                System.out.println("You have " + i + " attempts left");
+            }
+        }
     }while(i > 0 && !userCorrect);
     }
 }
