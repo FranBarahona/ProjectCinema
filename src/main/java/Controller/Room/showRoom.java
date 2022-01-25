@@ -1,5 +1,7 @@
 package Controller.Room;
 import Model.RoomModel.Room;
+import Utils.Logs.Logs;
+
 import java.util.Map;
 import java.util.Scanner;
 import static Model.RoomModel.Rooms.roomList;
@@ -16,6 +18,7 @@ public class showRoom {
                 }
             } catch(Exception e){
                 System.out.println(e.getMessage());
+                Logs.toLog(e.getMessage());
             }
         Scanner sc = new Scanner(System.in);
 

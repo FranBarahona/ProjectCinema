@@ -1,5 +1,7 @@
 package Controller.User;
 import Model.UserModel.User;
+import Utils.Logs.Logs;
+
 import java.util.Map;
 import java.util.Scanner;
 import static Model.UserModel.Users.userList;
@@ -17,6 +19,7 @@ public class showUser {
             }
            } catch(Exception e){
             System.out.println(e.getMessage());
+            Logs.toLog(e.getMessage());
           }
         Scanner sc = new Scanner(System.in);
         sc.nextLine();

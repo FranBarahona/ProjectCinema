@@ -1,6 +1,7 @@
 package Controller.Admin;
 import Model.AdminModel.Admin;
 import Model.UserDetails;
+import Utils.Logs.Logs;
 
 import java.util.Scanner;
 import static Controller.Admin.CrudAdmin.*;
@@ -28,6 +29,7 @@ public class reAdmin {
 
         } catch(Exception e){
             System.err.println(e.getMessage());
+            Logs.toLog(e.getMessage());
         }
     }
 }

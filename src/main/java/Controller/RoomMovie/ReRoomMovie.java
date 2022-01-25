@@ -1,6 +1,7 @@
 package Controller.RoomMovie;
 
 import Model.RoomMovieModel.RoomMovie;
+import Utils.Logs.Logs;
 
 import java.util.Map;
 import java.util.Scanner;
@@ -30,6 +31,7 @@ public class ReRoomMovie {
 
         } catch(Exception e){
             System.err.println(e.getMessage());
+            Logs.toLog(e.getMessage());
         }
     }
 }

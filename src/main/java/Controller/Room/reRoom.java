@@ -1,5 +1,7 @@
 package Controller.Room;
 
+import Utils.Logs.Logs;
+
 import java.util.Scanner;
 import static Controller.Room.CrudRoom.*;
 import static Model.RoomModel.Rooms.roomList;
@@ -23,6 +25,7 @@ public class reRoom {
                 }
         } catch(Exception e){
             System.err.println(e.getMessage());
+            Logs.toLog(e.getMessage());
         }
     }
 }

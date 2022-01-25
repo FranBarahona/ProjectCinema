@@ -1,6 +1,8 @@
 package Reports;
 
 
+import Utils.Logs.Logs;
+
 import java.io.*;
 
 
@@ -42,6 +44,7 @@ public class Report {
            }
         }catch(Exception e){
             System.out.println(e.getMessage());
+            Logs.toLog(e.getMessage());
         }
     }
 

@@ -1,5 +1,7 @@
 package Controller.User;
 
+import Utils.Logs.Logs;
+
 import java.util.Scanner;
 
 import static Controller.User.CrudUser.*;
@@ -26,6 +28,7 @@ public class reUser{
                 }
     } catch(Exception e){
         System.err.println(e.getMessage());
+        Logs.toLog(e.getMessage());
      }
     }
 }
