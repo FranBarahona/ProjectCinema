@@ -1,14 +1,0 @@
-
->
-java:S1116"Remove this empty statement.(¹Â·üÿÿÿÿ8šÎ±Ğè/
-Q
-java:S2696$"6Make the enclosing method "static" or remove this set.(ıûãÍÿÿÿÿÿ
-S	java:S106("9Replace this use of System.out or System.err by a logger.(ïù¯¯ûÿÿÿÿ
-S	java:S1063"9Replace this use of System.out or System.err by a logger.(ïù¯¯ûÿÿÿÿ
-P
-java:S1128"3Remove this unused import 'Model.AdminModel.Admin'.(·÷Ç±8ÊÕïŞâ/
-@
-java:S1128	"$Remove this unused import 'java.io'.(¬›ãD8ÊÕïŞâ/
-`
-java:S1128">Remove this unused import 'Model.AdminModel.Admins.adminList'.(ëûßœşÿÿÿÿ8ÊÕïŞâ/
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(§ÍÎìùÿÿÿÿ

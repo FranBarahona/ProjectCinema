@@ -39,10 +39,6 @@ h
 8src/main/java/Utils/AbstractClass/FileTextInclusion.java,f\1\f1794b8e91e99144df9e445d417daaa0eccadd81
 Y
 )src/main/java/Model/MovieModel/Movie.java,e\6\e63cd9a9c6222abd395f6387d177559eabf0f3ff
-Y
-)src/main/java/Controller/User/reUser.java,7\1\717af6b046626aeed4c6c1f368c5979872edd0bb
-[
-+src/main/java/Controller/User/CrudUser.java,7\0\70aa25c5fe5d5dc7b70b60f95302ff135320b71c
 [
 +src/main/java/Controller/User/showUser.java,0\e\0e628d74bca88fbc878b38b996e0169f0be09215
 b
@@ -53,5 +49,3 @@ W
 'src/main/java/Model/RoomModel/Room.java,6\f\6f2fd3461574584417f785254e576ae090bd3e14
 b
 2src/main/java/UI/AdminOptions/UIRegisterAdmin.java,6\f\6f58b96d3b85ce4db8e0fe430131c40014909014
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
